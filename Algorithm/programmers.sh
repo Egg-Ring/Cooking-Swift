@@ -72,11 +72,7 @@ today=$(date "+%Y/%m/%d")
   echo "//  Created by $nickname on $today."
   echo "//\n"
   echo "import Foundation\n"
-  echo "struct Number$problem_number: Solution {\n"
-  echo "  func answer(input: Any) -> Any? {"
-  echo "    guard let inputValue = input as? <#Solution Return Type#> else { return nil }\n"
-  echo "    return solution(inputValue)"
-  echo "  }"
+  echo "struct Number$problem_number: Solution {\n\n"
   echo "}"
 
 } >> "$solution_file"

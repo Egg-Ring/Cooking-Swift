@@ -2,12 +2,12 @@
 //  호텔 대실
 //  https://school.programmers.co.kr/learn/courses/30/lessons/155651
 //
-//  Created by 홍승현 on 2023/02/14.
+//  Created by whitehyun on 2023/02/14.
 //
 
 import Foundation
 
-struct Number155651: Solution {
+struct Number155651 {
   
   private var queue = [DateTime]()
   
@@ -42,13 +42,6 @@ struct Number155651: Solution {
     
     // 최종 운영하는 방
     return queue.count
-  }
-  
-  mutating func answer(input: Any) -> Any? {
-    guard let inputValue = input as? [[String]] else { return nil }
-    let value = solution(inputValue)
-    // queue.removeAll()
-    return value
   }
 }
 
