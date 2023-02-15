@@ -72,7 +72,7 @@ today=$(date "+%Y/%m/%d")
   echo "//  Created by $nickname on $today."
   echo "//\n"
   echo "import Foundation\n"
-  echo "struct Number$problem_number: Solution {\n\n"
+  echo "struct Number$problem_number {\n\n"
   echo "}"
 
 } >> "$solution_file"
