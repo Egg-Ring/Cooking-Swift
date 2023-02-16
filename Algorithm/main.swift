@@ -7,7 +7,7 @@
 
 import Foundation
 
-var problem = Number155652()
+var problem = Number154540()
 
-print(problem.solution("aukks", "wbqd", 5))
-print(problem.solution("ybcde", "az", 1))
+print(problem.solution(["X591X","X1X5X","X231X", "1XXX1"]))
+print(problem.solution(["XXX","XXX","XXX"]))
