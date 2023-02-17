@@ -7,7 +7,7 @@
 
 import Foundation
 
-var problem = Number154540()
+var problem = Number159993()
 
-print(problem.solution(["X591X","X1X5X","X231X", "1XXX1"]))
-print(problem.solution(["XXX","XXX","XXX"]))
+print(problem.solution(["SOOOL","XXXXO","OOOOO","OXXXX","OOOOE"]) == 16)
+print(problem.solution(["LOOXS","OOOOX","OOOOO","OOOOO","EOOOO"]) == -1)
