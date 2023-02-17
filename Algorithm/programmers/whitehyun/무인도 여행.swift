@@ -7,11 +7,6 @@
 
 import Foundation
 
-struct Point: Equatable {
-  let x: Int
-  let y: Int
-}
-
 struct Number154540 {
   func solution(_ maps: [String]) -> [Int] {
     if maps.filter({$0.count != $0.filter({$0 == "X"}).count}).isEmpty { return [-1] }
