@@ -54,6 +54,7 @@
 		BA30930E299F851800FCD5F3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BA30930A299F84CB00FCD5F3 /* Deque.swift */,
 				BA30930C299F850400FCD5F3 /* Point.swift */,
 			);
 			path = Utils;
@@ -89,7 +90,6 @@
 		BAF746E6299B7C4A00182311 /* programmers */ = {
 			isa = PBXGroup;
 			children = (
-				BA30930A299F84CB00FCD5F3 /* Deque.swift */,
 				BAF746E7299B7C4F00182311 /* whitehyun */,
 			);
 			path = programmers;
