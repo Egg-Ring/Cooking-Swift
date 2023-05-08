@@ -8,13 +8,9 @@
 import Foundation
 
 /// 요격 시스템
-struct Number181188: Solution {
-  typealias Input = [[Int]]
+struct Number181188 {
   
-  typealias Output = Int
-  
-  
-  func solution(_ input: Input) -> Output {
+  func solution(_ input: [[Int]]) -> Int {
     
     var missilePosition = 0
     var answer = 0
