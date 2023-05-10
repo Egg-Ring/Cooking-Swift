@@ -8,9 +8,9 @@
 import Foundation
 
 
-let problem = Number181187()
+let problem = Number178870()
 
-let r1 = 5
-let r2 = 6
 
-print(problem.solution(r1, r2))
+print(problem.solution([1, 2, 3, 4, 5] , 7) == [2, 3])
+print(problem.solution([1, 1, 1, 2, 3, 4, 5],  5) == [6, 6])
+print(problem.solution([2, 2, 2, 2, 2], 6) == [0, 2])
