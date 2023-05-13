@@ -8,11 +8,9 @@
 import Foundation
 
 
-let problem = Number176962()
+let problem = Number172927()
 
-
-
-print(problem.solution([["korean", "11:40", "30"], ["english", "12:10", "20"], ["math", "12:30", "40"]]) == ["korean", "english", "math"])
-print(problem.solution([["science", "12:40", "50"], ["music", "12:20", "40"], ["history", "14:00", "30"], ["computer", "12:30", "100"]]) == ["science", "history", "computer", "music"])
-print(problem.solution([["aaa", "12:00", "20"], ["bbb", "12:10", "30"], ["ccc", "12:40", "10"]]) == ["bbb", "ccc", "aaa"])
-print(problem.solution([["A", "00:00", "100"], ["B", "23:59", "100"], ["C", "22:18", "100"], ["D", "22:17", "100"]]) == ["A", "C", "B", "D"])
+print(problem.solution([1, 3, 2], ["diamond", "diamond", "diamond", "iron", "iron", "diamond", "iron", "stone"]) == 12)
+print(problem.solution([0, 1, 1], ["diamond", "diamond", "diamond", "diamond", "diamond", "iron", "iron", "iron", "iron", "iron", "diamond"]) == 50)
+print(problem.solution([0, 1, 1], ["diamond", "diamond", "diamond", "diamond", "diamond", "iron", "iron", "iron", "iron", "iron", "diamond"]) == 50)
+print(problem.solution([1, 0, 1], ["diamond", "iron", "iron", "stone", "stone", "diamond", "diamond", "diamond", "diamond", "iron", "diamond"]) == 42)
