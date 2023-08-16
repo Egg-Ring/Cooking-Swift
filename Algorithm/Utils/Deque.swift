@@ -63,3 +63,9 @@ extension Deque: CustomStringConvertible {
     "\(frontQueue), \(backQueue)"
   }
 }
+
+extension Deque: ExpressibleByArrayLiteral {
+  init(arrayLiteral elements: Element...) {
+    backQueue = elements
+  }
+}

@@ -8,9 +8,8 @@
 import Foundation
 
 
-let problem = Number172927()
+let problem = Number150365()
 
-print(problem.solution([1, 3, 2], ["diamond", "diamond", "diamond", "iron", "iron", "diamond", "iron", "stone"]) == 12)
-print(problem.solution([0, 1, 1], ["diamond", "diamond", "diamond", "diamond", "diamond", "iron", "iron", "iron", "iron", "iron", "diamond"]) == 50)
-print(problem.solution([0, 1, 1], ["diamond", "diamond", "diamond", "diamond", "diamond", "iron", "iron", "iron", "iron", "iron", "diamond"]) == 50)
-print(problem.solution([1, 0, 1], ["diamond", "iron", "iron", "stone", "stone", "diamond", "diamond", "diamond", "diamond", "iron", "diamond"]) == 42)
+print(problem.solution(3, 4, 2, 3, 3, 1, 5) == "dllrl")
+print(problem.solution(2, 2, 1, 1, 2, 2, 2) == "dr")
+print(problem.solution(3, 3, 1, 2, 3, 3, 4) == "impossible")
