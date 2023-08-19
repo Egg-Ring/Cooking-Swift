@@ -8,8 +8,10 @@
 import Foundation
 
 
-let problem = Number150365()
+let problem = Number118669()
 
-print(problem.solution(3, 4, 2, 3, 3, 1, 5) == "dllrl")
-print(problem.solution(2, 2, 1, 1, 2, 2, 2) == "dr")
-print(problem.solution(3, 3, 1, 2, 3, 3, 4) == "impossible")
+print(problem.solution(6, [[1, 2, 3], [2, 3, 5], [2, 4, 2], [2, 5, 4], [3, 4, 4], [4, 5, 3], [4, 6, 1], [5, 6, 1]], [1, 3], [5]) == [5, 3])
+print(problem.solution(7, [[1, 4, 4], [1, 6, 1], [1, 7, 3], [2, 5, 2], [3, 7, 4], [5, 6, 6]], [1], [2, 3, 4]) == [3, 4])
+print(problem.solution(7, [[1, 2, 5], [1, 4, 1], [2, 3, 1], [2, 6, 7], [4, 5, 1], [5, 6, 1], [6, 7, 1]], [3, 7], [1, 5]) == [5, 1])
+print(problem.solution(5, [[1, 3, 10], [1, 4, 20], [2, 3, 4], [2, 4, 6], [3, 5, 20], [4, 5, 6]], [1, 2], [5]) == [5, 6])
+

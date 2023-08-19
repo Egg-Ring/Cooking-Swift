@@ -19,22 +19,25 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 
 if [ "$#" -eq 0 ]; then
   echo -n "프로그래머스 문제 번호: "
-  read -r problem_number
+  read -r problem_info
   echo -n "닉네임: "
   read -r nickname
 elif [ "$#" -eq 2 ]; then
-  problem_number="$1"
+  problem_info="$1"
   nickname="$2"
 else
   exit 1
 fi
 
 
-# problem_info는 문제 번호여야 합니다.
+# problem_info는 링크일 수도 문제 번호일 수도 있습니다.
 # 그래서 문제 번호를 추출해 내야 합니다.
-if [[ $problem_number =~ ^[0-9]+$ ]]; then
+if [[ $problem_info =~ ^[0-9]+$ ]]; then
   # 모두 숫자이면 그대로 사용합니다.
-  problem_number=$problem_number
+  problem_number=$problem_info
+elif [[ $problem_info =~ ^https://school.programmers.co.kr/learn/courses/30/lessons/[0-9]+$ ]]; then
+  # 링크 형식이면 맨 끝에만 떼어내 씁니다.
+  problem_number=$(echo "$problem_info" | sed -n "s/^.*https:\/\/school\.programmers\.co\.kr\/learn\/courses\/30\/lessons\/\([0-9]*\).*$/\1/p")
 else
   # 아니면(비어있거나 숫자 아니거나 링크도 아닐 때) 뻗습니다.
   echo "문제 번호 또는 링크가 필요합니다!"
