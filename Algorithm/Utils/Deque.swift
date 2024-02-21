@@ -10,23 +10,23 @@ import Foundation
 struct Deque<Element: Equatable> {
   private var frontQueue = [Element]()
   private var backQueue = [Element]()
-  
+
   var isEmpty: Bool {
     frontQueue.isEmpty && backQueue.isEmpty
   }
-  
+
   var count: Int {
     frontQueue.count + backQueue.count
   }
-  
+
   mutating func appendLeft(_ element: Element) {
     frontQueue.append(element)
   }
-  
+
   mutating func append(_ element: Element) {
     backQueue.append(element)
   }
-  
+
   mutating func popLeft() -> Element? {
     if !frontQueue.isEmpty {
       return frontQueue.popLast()
@@ -36,7 +36,7 @@ struct Deque<Element: Equatable> {
     backQueue.reverse()
     return value
   }
-  
+
   mutating func pop() -> Element? {
     if !backQueue.isEmpty {
       return backQueue.popLast()
@@ -45,13 +45,13 @@ struct Deque<Element: Equatable> {
     let value = frontQueue.popLast()
     frontQueue.reverse()
     return value
-    
+
   }
-  
+
   func contains(_ element: Element) -> Bool {
     return frontQueue.contains(element) || backQueue.contains(element)
   }
-  
+
   mutating func removeAll() {
     frontQueue.removeAll()
     backQueue.removeAll()

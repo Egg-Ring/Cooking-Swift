@@ -10,13 +10,13 @@ import Foundation
 struct Number178870 {
 
   func solution(_ sequence: [Int], _ k: Int) -> [Int] {
-    
+
     var start = 0
     var end = 0
     var gap = Int.max
     var answer = [0, 0]
     var sum = sequence[0]
-    
+
     while start < sequence.count && end < sequence.count {
       if sum < k {
         end += 1
@@ -38,7 +38,7 @@ struct Number178870 {
         start += 1
       }
     }
-    
+
     return answer
   }
 }

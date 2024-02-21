@@ -99,12 +99,12 @@ struct Number150365 {
   
   func solution(_ n: Int, _ m: Int, _ x: Int, _ y: Int, _ r: Int, _ c: Int, _ k: Int) -> String {
     var visited: [[[Bool]]] = Array(repeating: Array(repeating: Array(repeating: false, count: m), count: n), count: k)
-
+    
     let (startX, startY) = (x - 1, y - 1)
     let (endX, endY) = (r - 1, c - 1)
     var queue: Queue<MazeInfo> = [MazeInfo(x: startX, y: startY, count: 0, direction: "")]
     visited[0][startX][startY] = true
-
+    
     while !queue.isEmpty {
       
       let info = queue.popFirst()!

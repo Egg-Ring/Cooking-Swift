@@ -15,7 +15,7 @@ struct Number159993 {
     let y: Int
     var isLeverOn: Int // false: 0, true: 1
   }
-
+  
   func solution(_ maps: [String]) -> Int {
     let maps = maps.map { $0.map { String($0) } }
     
